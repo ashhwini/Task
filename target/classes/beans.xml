@@ -9,25 +9,16 @@
         <property name="gender" value="Male"/>
         <property name="age" value="51"/>
     </bean>
-    <bean id="movie" class="com.stackroute.domain.Movie">
+    <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">
         <property name="actor">
             <ref bean="actor"></ref>
         </property>
-
     </bean>
-
-
-
-    <bean id="actor1" class="com.stackroute.domain.Actor">
-        <property name="name" value="Hrithik"/>
-        <property name="gender" value="Male"/>
-        <property name="age" value="45"/>
-    </bean>
-    <bean id="movie1" class="com.stackroute.domain.Movie">
+    <bean id="movie1" class="com.stackroute.domain.Movie" autowire="constructor">
         <property name="actor">
-            <ref bean="actor1"></ref>
+            <ref bean="actor"></ref>
         </property>
-
     </bean>
+
 
 </beans>
