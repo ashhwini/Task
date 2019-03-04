@@ -14,6 +14,6 @@
             <ref bean="actor"></ref>
         </property>
     </bean>
-
+    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"/>
 
 </beans>
