@@ -13,21 +13,7 @@
         <property name="actor">
             <ref bean="actor"></ref>
         </property>
-
     </bean>
 
-
-
-    <bean id="actor1" class="com.stackroute.domain.Actor">
-        <property name="name" value="Hrithik"/>
-        <property name="gender" value="Male"/>
-        <property name="age" value="45"/>
-    </bean>
-    <bean id="movie1" class="com.stackroute.domain.Movie">
-        <property name="actor">
-            <ref bean="actor1"></ref>
-        </property>
-
-    </bean>
 
 </beans>
